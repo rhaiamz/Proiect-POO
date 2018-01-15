@@ -10,7 +10,7 @@
 // global variables ///////////////////////////////////////////////////////////////////////////////
 const cv::Size GAUSSIAN_SMOOTH_FILTER_SIZE = cv::Size(5, 5);
 const int ADAPTIVE_THRESH_BLOCK_SIZE = 19;
-const int ADAPTIVE_THRESH_WEIGHT = 9;
+const int ADAPTIVE_THRESH_WEIGHT = 1000;
 
 // function prototypes ////////////////////////////////////////////////////////////////////////////
 
