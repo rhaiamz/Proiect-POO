@@ -20,7 +20,10 @@ public:
 
     std::string strChars;
 
-    
+    static bool sortDescendingByNumberOfChars(const PossiblePlate &ppLeft, const PossiblePlate &ppRight) 
+    {
+        return(ppLeft.strChars.length() > ppRight.strChars.length());
+    }
     
 
 };
