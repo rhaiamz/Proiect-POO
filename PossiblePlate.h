@@ -1,4 +1,4 @@
-// PossiblePlate.h
+// Posibile caractere - Dumbrava Mihael
 
 #ifndef POSSIBLE_PLATE_H
 #define POSSIBLE_PLATE_H
@@ -9,10 +9,9 @@
 #include<opencv2/highgui/highgui.hpp>
 #include<opencv2/imgproc/imgproc.hpp>
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
 class PossiblePlate {
 public:
-    // member variables ///////////////////////////////////////////////////////////////////////////
+    // Membrul Variabilelor
     cv::Mat imgPlate;
     cv::Mat imgGrayscale;
     cv::Mat imgThresh;
@@ -21,7 +20,7 @@ public:
 
     std::string strChars;
 
-    ///////////////////////////////////////////////////////////////////////////////////////////////
+    
     static bool sortDescendingByNumberOfChars(const PossiblePlate &ppLeft, const PossiblePlate &ppRight) {
         return(ppLeft.strChars.length() > ppRight.strChars.length());
     }
@@ -29,5 +28,5 @@ public:
 };
 
 
-#endif		// end #ifndef POSSIBLE_PLATE_H
+#endif		// sfarsitul functiei #ifndef POSSIBLE_PLATE_H
 
